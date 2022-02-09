@@ -1,5 +1,5 @@
 void  main() {
-  final idade = 18;
+  final idade = 1;
 
   final eMaiorIdade = idade >= 18 ? true : false;
 
