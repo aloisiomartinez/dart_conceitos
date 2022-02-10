@@ -20,4 +20,15 @@ void main() {
 
   final numerosGerados = List.generate(10, (index) => index + 1);
 
+  var some = numerosGerados.fold<int>(0, (previusValue, numero) =>
+	previusValue = previusValue + numero);
+  
+  var promocaoAtiva = true;
+
+  var produtos = [
+    'Cerveja',
+    'Refrigerante',
+    if(promocaoAtiva) 'Suco'
+  ];
+
 }
