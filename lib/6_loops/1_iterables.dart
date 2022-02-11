@@ -1,5 +1,5 @@
 void main() {
-  var numeros = List.generate(10, (10) => 10);
+  var numeros = List.generate(10, (num) => 10);
 
   numeros.where((numero) => numero != 5)
   .forEach((numero) => print(numero));
