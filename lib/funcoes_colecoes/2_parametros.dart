@@ -18,3 +18,7 @@ double somaDoubles({double? numero1, double? numero2}) {
 
   return 0.0;
 }
+//Opcional
+int somaInteirosOpcionais([int? numero1 = 0, int? numero2 = 0]) {
+  return numero1! + numero2!;
+}
