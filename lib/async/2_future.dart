@@ -4,7 +4,7 @@
   processo3().then((mensagem) => print(mensagem));
   processo4().then((mensagem) =>print('Mensagem do p4 $mensagem'), onError: (error) {
     print('Tratando o erro pelo OnErro do Then');
-  },
+    },
   );
   print('fim do P1');
 
