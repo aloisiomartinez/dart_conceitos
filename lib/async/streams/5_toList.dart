@@ -4,15 +4,10 @@ Future<void> main() async {
 
 
   stream = stream.take(5).skip(2);
-  stream = stream.take(5).skipWhile((numero){
-    print('Numero que chegou na skipWhile $numero');
-    return numero < 5;
-  });
+  
+  final data = await stream.toList();
 
-  await for(var i in stream) {
-    print(i);
-
-  }
+  print(data);
 }
 
 int callback(int value) {
